@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "npm install && cd frontend && npm install && npm run build",
-    "deploy": "cd frontend && npm install && npm run build && cd .. && npm install && npm start",
+    "deploy": "npm install && cd frontend && npm install && npm run build",
     "start": "node backend/index.js",
     "backend": "nodemon backend/index.js",
     "frontend": "npm run dev --prefix frontend",
