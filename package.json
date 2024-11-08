@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "npm install && cd frontend && npm install && npm list vite && npm run build" ,
+    "build": "npm install && cd frontend && npm install --production=false && npm run build",
     "deploy": "cd frontend && npm install && npm run build",
     "start": "node backend/index.js",
     "backend": "nodemon backend/index.js",
@@ -40,5 +40,4 @@
   "engines": {
     "node": "v22.11.0"
   }
-  
 }
